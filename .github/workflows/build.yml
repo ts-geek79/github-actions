@@ -63,3 +63,6 @@ jobs:
 
       - name: Run build
         run: npm run build
+
+      - name: Print secret
+        run: echo "Secret is ${{ secrets.SECRET}}"
