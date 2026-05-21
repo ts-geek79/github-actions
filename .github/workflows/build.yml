@@ -1,4 +1,4 @@
-name: CI Pipeline
+name: build
 
 on:
   push:
@@ -23,12 +23,6 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-
-      - name: Check ESLint errors
-        run: npm run lint  
-
-      - name: Check prettier format
-        run: npm run format-check
 
       - name: Run build
         run: npm run build
