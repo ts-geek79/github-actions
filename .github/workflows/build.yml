@@ -46,6 +46,7 @@ jobs:
         run: npm run format-check
 
   build:
+    needs: [lint, format]
     runs-on: ubuntu-latest
 
     steps:
